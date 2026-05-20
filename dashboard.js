@@ -88,7 +88,7 @@ function editEmployee(id){
     );
 
     window.location.href =
-    "./Frontend/index.html";
+    "index.html";
 
 }
 
