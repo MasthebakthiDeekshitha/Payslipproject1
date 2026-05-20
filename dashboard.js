@@ -95,7 +95,7 @@ function editEmployee(id){
 function openPayslip(){
 
     window.location.href =
-    "index.html";
+    "payslip.html";
 
 }
 
