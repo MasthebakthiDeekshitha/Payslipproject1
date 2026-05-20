@@ -1,0 +1,1012 @@
+body{
+    margin:0;
+    padding:20px;
+    
+    font-family:Arial, sans-serif;
+    font-size:14px;
+}
+
+.main-container{
+
+    width: 85%;
+    max-width: 1100px;
+
+    margin: 20px auto;
+
+    padding: 20px;
+
+    background: #fff;
+
+}
+
+/* ================= HEADER ================= */
+
+.header-section{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    padding-bottom:20px;
+    border-bottom:1px solid #999;
+}
+
+.logo{
+    width:90px;
+    height:90px;
+    object-fit:contain;
+}
+
+.company-title{
+    font-size:28px;
+    font-weight:bold;
+    color:#003366;
+    margin:0;
+}
+
+.sub-title{
+    font-size:18px;
+    margin-top:5px;
+    font-weight:normal;
+}
+
+/* ================= SECTION ================= */
+
+.section-box{
+    border:2px solid #000;
+    padding:20px;
+    margin-top:20px;
+}
+
+.section-title{
+    font-size:22px;
+    margin-bottom:20px;
+    color:#003366;
+}
+
+/* ================= EMPLOYEE GRID ================= */
+
+.employee-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+.detail-row-inline{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:18px;
+}
+
+.detail-row-inline label{
+    width:140px;
+    font-weight:bold;
+    margin:0;
+}
+
+.detail-row-inline .form-control{
+    flex:1;
+}
+
+.pay-period{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    width:75%;
+}
+
+.pay-period .form-control{
+    flex:1;
+}
+
+/* ================= AMOUNT HEADER ================= */
+
+.amount-header{
+    display:grid;
+    grid-template-columns:1fr 300px 300px;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.amount-header h5{
+    margin:0;
+    font-size:16px;
+    font-weight:bold;
+}
+
+.amount-header h6{
+    margin:0;
+    font-size:14px;
+}
+
+/* ================= SALARY ROW ================= */
+
+.salary-row{
+    display:grid;
+    grid-template-columns:1fr 300px 300px;
+    gap:20px;
+    align-items:center;
+    margin-bottom:18px;
+}
+
+.salary-row label{
+    font-size:16px;
+}
+
+.total-row label{
+    font-weight:bold;
+    font-size:18px;
+}
+
+/* ================= INPUTS ================= */
+
+.form-control{
+    height:45px;
+    font-size:16px;
+    border:1px solid #ccc;
+    border-radius:4px;
+    padding:10px;
+}
+
+.form-control:focus{
+    box-shadow:none;
+    border-color:#999;
+}
+
+/* ================= READONLY FIELDS ================= */
+
+.readonly-field{
+    background:#f3f3f3 !important;
+    pointer-events:none;
+    cursor:default;
+}
+
+.readonly-field:focus{
+    outline:none !important;
+    box-shadow:none !important;
+    border:1px solid #ccc !important;
+}
+
+/* ================= BANK ================= */
+
+.bank-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+.bank-grid label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+/* ================= FORMULA ================= */
+
+/* ================= FORMULA ================= */
+
+.formula-text{
+    text-align:center;
+    font-size:18px;
+    font-weight:bold;
+    margin-top:20px;
+    margin-bottom:35px;
+}
+
+.formula-labels{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    text-align:center;
+    margin-bottom:10px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.formula-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.formula-grid input{
+    text-align:center;
+    font-size:18px;
+    height:55px;
+}
+
+/* ================= BUTTONS ================= */
+
+.button-section{
+    margin-top:25px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.btn{
+    min-width:180px;
+    font-size:18px;
+    padding:10px 20px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:992px){
+
+    .employee-grid{
+        grid-template-columns:1fr;
+    }
+
+    .salary-row{
+        grid-template-columns:1fr;
+    }
+
+    .amount-header{
+        display:none;
+    }
+
+    .bank-grid{
+        grid-template-columns:1fr;
+    }
+
+    .formula-grid{
+        grid-template-columns:1fr;
+    }
+
+    .header-section{
+        flex-direction:column;
+        text-align:center;
+    }
+    
+}
+body{
+    margin:0;
+    padding:20px;
+    background:#f5f5f5;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+}
+
+.main-container{
+    width:95%;
+    margin:auto;
+    background:#fff;
+    border:2px solid #000;
+    padding:20px;
+}
+
+/* ================= HEADER ================= */
+
+.header-section{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    padding-bottom:20px;
+    border-bottom:1px solid #999;
+}
+
+.logo{
+    width:90px;
+    height:90px;
+    object-fit:contain;
+}
+
+.company-title{
+    font-size:28px;
+    font-weight:bold;
+    color:#003366;
+    margin:0;
+}
+
+.sub-title{
+    font-size:18px;
+    margin-top:5px;
+    font-weight:normal;
+}
+
+/* ================= SECTION ================= */
+
+.section-box{
+    border:2px solid #000;
+    padding:20px;
+    margin-top:20px;
+}
+
+.section-title{
+    font-size:22px;
+    margin-bottom:20px;
+    color:#003366;
+}
+
+/* ================= EMPLOYEE GRID ================= */
+
+.employee-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+.detail-row-inline{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:18px;
+}
+
+.detail-row-inline label{
+    width:140px;
+    font-weight:bold;
+    margin:0;
+}
+
+.detail-row-inline .form-control{
+    flex:1;
+}
+
+.pay-period{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    width:75%;
+}
+
+.pay-period .form-control{
+    flex:1;
+}
+
+/* ================= AMOUNT HEADER ================= */
+
+.amount-header{
+    display:grid;
+    grid-template-columns:1fr 300px 300px;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.amount-header h5{
+    margin:0;
+    font-size:16px;
+    font-weight:bold;
+}
+
+.amount-header h6{
+    margin:0;
+    font-size:14px;
+}
+
+/* ================= SALARY ROW ================= */
+
+.salary-row{
+    display:grid;
+    grid-template-columns:1fr 300px 300px;
+    gap:20px;
+    align-items:center;
+    margin-bottom:18px;
+}
+
+.salary-row label{
+    font-size:16px;
+}
+
+.total-row label{
+    font-weight:bold;
+    font-size:18px;
+}
+
+/* ================= INPUTS ================= */
+
+.form-control{
+    height:45px;
+    font-size:16px;
+    border:1px solid #ccc;
+    border-radius:4px;
+    padding:10px;
+}
+
+.form-control:focus{
+    box-shadow:none;
+    border-color:#999;
+}
+
+/* ================= READONLY FIELDS ================= */
+
+.readonly-field{
+    background:#f3f3f3 !important;
+    pointer-events:none;
+    cursor:default;
+}
+
+.readonly-field:focus{
+    outline:none !important;
+    box-shadow:none !important;
+    border:1px solid #ccc !important;
+}
+
+/* ================= BANK ================= */
+
+.bank-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+.bank-grid label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+/* ================= FORMULA ================= */
+
+/* ================= FORMULA ================= */
+
+.formula-text{
+    text-align:center;
+    font-size:18px;
+    font-weight:bold;
+    margin-top:20px;
+    margin-bottom:35px;
+}
+
+.formula-labels{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    text-align:center;
+    margin-bottom:10px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.formula-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.formula-grid input{
+    text-align:center;
+    font-size:18px;
+    height:55px;
+}
+
+/* ================= BUTTONS ================= */
+
+.button-section{
+    margin-top:25px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.btn{
+    min-width:180px;
+    font-size:18px;
+    padding:10px 20px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:992px){
+
+    .employee-grid{
+        grid-template-columns:1fr;
+    }
+
+    .salary-row{
+        grid-template-columns:1fr;
+    }
+
+    .amount-header{
+        display:none;
+    }
+
+    .bank-grid{
+        grid-template-columns:1fr;
+    }
+
+    .formula-grid{
+        grid-template-columns:1fr;
+    }
+
+    .header-section{
+        flex-direction:column;
+        text-align:center;
+    }
+    /* ================= BANK FIELD FIX ================= */
+
+.detail-row select,
+.detail-row input {
+
+    width: 100% !important;
+
+    height: 56px !important;
+
+    padding: 10px 15px !important;
+
+    font-size: 16px !important;
+
+    border: 1px solid #ccc !important;
+
+    border-radius: 5px !important;
+
+    box-sizing: border-box !important;
+
+}
+
+
+
+/* Dropdown arrow visible */
+
+.detail-row select {
+
+    appearance: auto !important;
+
+    -webkit-appearance: auto !important;
+
+    -moz-appearance: auto !important;
+
+    cursor: pointer;
+
+}
+}
+/* ================= BANK FIELD FIX ================= */
+
+.bank-grid select,
+.bank-grid input {
+
+    width: 100%;
+
+    height: 45px;
+
+    padding: 10px;
+
+    font-size: 16px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 4px;
+
+    box-sizing: border-box;
+
+}
+
+
+
+/* Dropdown arrow */
+
+.bank-grid select {
+
+    appearance: auto;
+
+    -webkit-appearance: auto;
+
+    -moz-appearance: auto;
+
+    cursor: pointer;
+
+}
+.error-text{
+color:red;
+font-size:13px;
+}
+/* MAKE COMPLETE FORM SMALLER */
+
+.main-container{
+
+width:85%;
+
+padding:15px;
+
+}
+
+
+
+.section-box{
+
+padding:15px;
+
+margin-top:15px;
+
+}
+
+
+
+.form-control{
+
+height:38px;
+
+font-size:14px;
+
+padding:8px;
+
+}
+
+
+
+label{
+
+font-size:14px;
+
+}
+
+
+
+.section-title{
+
+font-size:18px;
+
+}
+
+
+
+.company-title{
+
+font-size:24px;
+
+}
+
+
+
+.sub-title{
+
+font-size:16px;
+
+}
+
+
+
+.salary-row{
+
+gap:15px;
+
+}
+
+
+
+.employee-grid{
+
+gap:25px;
+
+}
+
+
+
+.btn{
+
+min-width:150px;
+
+font-size:16px;
+
+padding:8px 15px;
+
+}
+/* ================= FINAL ONE PAGE A4 PAYSLIP ================= */
+
+@media print {
+
+@page {
+    size: A4;
+    margin: 5mm;
+}
+
+html,
+body {
+    width: 210mm;
+    height: 297mm;
+    margin: 0;
+    padding: 0;
+    background: white;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    overflow: hidden;
+}
+
+/* MAIN */
+
+.main-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    border: none;
+    box-shadow: none;
+    background: white;
+}
+
+/* REMOVE INPUT BOXES */
+
+input,
+select {
+    border: none !important;
+    outline: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    appearance: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: auto !important;
+    font-size: 10px !important;
+    color: black !important;
+    font-weight: 500;
+}
+
+/* HIDE BUTTONS */
+
+button,
+.btn {
+    display: none !important;
+}
+
+/* LOGO */
+
+.logo {
+    width: 45px !important;
+    height: 45px !important;
+}
+
+/* TITLES */
+
+.company-title {
+    font-size: 22px !important;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.sub-title {
+    font-size: 11px !important;
+    margin-bottom: 8px;
+}
+
+/* SECTION */
+
+.section-box {
+    border: 1px solid #000;
+    padding: 5px;
+    margin-bottom: 5px;
+    page-break-inside: avoid;
+}
+
+/* EMPLOYEE DETAILS */
+
+.employee-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px 20px;
+}
+
+.detail-row-inline {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+.detail-row-inline label {
+    width: 85px;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+/* SECTION TITLES */
+
+.section-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 4px;
+}
+
+/* TABLE ROWS */
+
+.salary-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 3px;
+    align-items: center;
+}
+
+/* COLUMN HEADINGS */
+
+.amount-heading {
+    font-weight: bold;
+    text-align: center;
+    font-size: 10px;
+}
+
+/* TOTALS */
+
+.total-row {
+    font-weight: bold;
+    font-size: 11px;
+}
+
+/* FORMULA */
+
+.formula-text {
+    text-align: center;
+    font-weight: bold;
+    margin:6px 0;
+    font-size: 11px;
+}
+
+/* NET PAY GRID */
+
+.formula-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    text-align: center;
+}
+
+/* REMOVE RED VALIDATION */
+
+.error,
+.error-text {
+    display: none !important;
+}
+
+input.error-border {
+    border: none !important;
+}
+
+/* PREVENT PAGE BREAK */
+
+* {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+}
+
+}
+.error-border{
+border:2px solid red !important;
+}
+
+.success-border{
+border:1px solid #28a745 !important;
+}
+/* ================= PERFECT COMPACT FORM ================= */
+
+.employee-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    column-gap:20px;
+
+}
+
+/* EACH ROW */
+
+.detail-row-inline{
+
+    display:grid;
+
+    grid-template-columns:120px 1fr;
+
+    align-items:center;
+
+    margin-bottom:10px;
+
+    column-gap:10px;
+
+}
+
+/* LABELS */
+
+.detail-row-inline label{
+
+    font-size:15px;
+
+    font-weight:600;
+
+    margin:0;
+
+}
+
+/* INPUTS */
+
+.detail-row-inline input,
+.detail-row-inline select,
+.form-control{
+
+    width:100% !important;
+
+    height:42px !important;
+
+    padding:8px 12px !important;
+
+    font-size:15px !important;
+
+    border-radius:8px !important;
+
+    box-sizing:border-box !important;
+
+}
+
+/* PAY PERIOD */
+
+.pay-period{
+
+    display:grid;
+
+    grid-template-columns:1fr auto 1fr;
+
+    gap:6px;
+
+    align-items:center;
+
+}
+
+/* BUTTONS */
+
+.button-section{
+
+    gap:10px;
+
+    margin-top:15px;
+
+}
+/* ================= PRINT A4 ================= */
+
+@media print {
+
+    @page{
+        size:A4;
+        margin:8mm;
+    }
+
+    body{
+
+        background:white;
+
+    }
+
+    .main-container{
+
+        width:100% !important;
+
+        margin:0 auto !important;
+
+        zoom:65%;
+
+    }
+
+    /* HIDE BUTTONS */
+
+    button,
+    .btn{
+
+        display:none !important;
+
+    }
+
+    /* REMOVE BOXES */
+
+    input,
+    select{
+
+        border:none !important;
+
+        outline:none !important;
+
+        box-shadow:none !important;
+
+        background:transparent !important;
+
+    }
+
+}
+.btn-primary{
+
+    background:red !important;
+
+    border:none !important;
+
+    color:white !important;
+
+}
+
+
+
