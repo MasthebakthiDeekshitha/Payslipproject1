@@ -659,19 +659,21 @@ window.onload = function(){
 // SKIP READONLY FIELDS
 // =========================
 
-window.onload = function(){
+document.addEventListener("DOMContentLoaded", function(){
 
-    let readonlyFields =
+const readonlyFields =
 
-    document.querySelectorAll(
-    "input[readonly]"
-    );
+document.querySelectorAll(
 
-    readonlyFields.forEach(function(field){
+'input[readonly]'
 
-        field.tabIndex = -1;
+);
 
-    });
+readonlyFields.forEach(function(field){
 
-};
+field.setAttribute("tabindex", "-1");
+
+});
+
+});
 
