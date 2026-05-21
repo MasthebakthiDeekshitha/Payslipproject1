@@ -655,4 +655,23 @@ window.onload = function(){
     }
 
 }
+// =========================
+// SKIP READONLY FIELDS
+// =========================
+
+window.onload = function(){
+
+    let readonlyFields =
+
+    document.querySelectorAll(
+    "input[readonly]"
+    );
+
+    readonlyFields.forEach(function(field){
+
+        field.tabIndex = -1;
+
+    });
+
+};
 
